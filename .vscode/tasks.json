@@ -23,6 +23,21 @@
                 "kind": "build",
                 "isDefault": true
             }
+        },
+        {
+            "type": "shell",
+            "label": "Disassemble executable",
+            "command": "objdump",
+            "args": [
+                "-d",
+                "${fileDirname}/${fileBasenameNoExtension}.exe",
+                ">",
+                "${fileDirname}/${fileBasenameNoExtension}.asm"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": []
         }
     ]
 }
