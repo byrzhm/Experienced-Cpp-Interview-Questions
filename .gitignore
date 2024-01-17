@@ -33,3 +33,6 @@
 
 # Assembly
 *.asm
+
+# vscode
+.vscode/settings.json
